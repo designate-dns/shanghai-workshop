@@ -1,0 +1,13 @@
+---
+- name: Example Zone
+  hosts: localhost
+
+  tasks:
+  - os_zone:
+      cloud: devstack
+      state: present
+      name: ansible.example.com.
+      zone_type: primary
+      email: test@example.net
+      description: Test zone
+      ttl: 3600

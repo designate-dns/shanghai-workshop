@@ -1,0 +1,11 @@
+heat_template_version: 2015-04-30
+
+description: Simple template to deploy a single DNS Zone
+
+resources:
+  heat_example_com:
+    type: OS::Designate::Zone
+    properties:
+      email: host@example.com
+      name: heat.example.com.
+      type: PRIMARY
